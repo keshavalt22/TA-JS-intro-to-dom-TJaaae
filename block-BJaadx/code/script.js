@@ -42,11 +42,11 @@ let inputCheckbox = document.getElementById("remember");
 
 // 8. Select the input of type password using Attribute selectors. (eg: input[type="text"]) and store in `password`
 
-
+let password = document.querySelector(`input[type="password"]`);
 
 // 9. Select the input using the placeholder attribute selector with value `password` and store in `attrPassword`
 
-
+let attrPassword = document.querySelector(`input[placeholder="password"]`);
 
 // 10. Select all the `li` element and store in `allTopics`
 
@@ -58,7 +58,7 @@ let allInput = document.querySelectorAll("input");
 
 // 12. Use forEach to console the `innerText` property of all the li element in `allTopics` variable.
 
-
+allTopics.forEach((elmt) => console.log(elmt.innerText));
 
 // 13. Select all the elements with class `list` and store in variable `listOfSelectedTopics`
 
@@ -67,6 +67,8 @@ let listOfSelectedTopics = document.querySelectorAll(".list");
 // 14. Select the first li element inside the `ul` element using `>` (direct child) and store in `firstLi`
 
 let firstLi = document.querySelector("ul").children[0];
+
+document.querySelector("ul>li");
 
 // 15. Select all the img element and log the number of element saying `The total number of img element is ---`
 
@@ -80,7 +82,9 @@ let allPElement = document.querySelectorAll("p");
 
 // 17. Select all the buttons and log the count of buttons.
 
+let allBtn = document.querySelectorAll("button").length;
 
+console.log(allBtn);
 
 // 18. Select all the `label` element and log the count.
 
@@ -90,11 +94,11 @@ console.log(totalLabel);
 
 // 19. Select all the elements with `id` of `test`
 
-document.getElementById("test");
+document.querySelectorAll("#test");
 
 // 20. Select the first element with id `test` using `getElementById`
 
-document.querySelector("#test");
+document.getElementById("test");
 
 // 21. Select the parent element of the element stored in `topics` variable (#5) and log the element.
 
@@ -112,18 +116,18 @@ console.log(topHead.previousElementSibling.innerText = "Learning About Walking t
 
 // 24. Select the first element child of the element stored in `topics` variable (#5) and change the `innerText` property of the element to `This is the first child element`.
 
-console.log(topHead.children[0].innerText = "This is the first child element");
+console.log(topHead.firstElementChild.innerText = "This is the first child element");
 
 // 25. Select the last element child of the element stored in `topics` variable (#5) and log the `typeof` the element.
 
-let lastLi = topHead.children[5];
+let lastLi = topHead.lastElementChild;
 
-console.log(typeof(lastLi));
+console.log(typeof lastLi);
 
 // 26. Select the element with type `fieldset` and store in a variable named `fieldsetElm`.
 
-
+let fieldsetElm = document.querySelector(`fieldset`);
 
 // 27. Select the parent element of the element stored in `fieldsetElm` variable (#5) and log the `typeof` the element.
 
-
+console.log(typeof fieldsetElm.parentElement);
