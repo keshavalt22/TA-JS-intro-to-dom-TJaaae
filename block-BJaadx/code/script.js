@@ -62,30 +62,68 @@ let allInput = document.querySelectorAll("input");
 
 // 13. Select all the elements with class `list` and store in variable `listOfSelectedTopics`
 
+let listOfSelectedTopics = document.querySelectorAll(".list");
+
 // 14. Select the first li element inside the `ul` element using `>` (direct child) and store in `firstLi`
+
+let firstLi = document.querySelector("ul").children[0];
 
 // 15. Select all the img element and log the number of element saying `The total number of img element is ---`
 
+let totalImg = document.querySelectorAll("img").length;
+
+console.log(`The total number of img element is ${totalImg}`);
+
 // 16. Select all the `p` element and store in `allPElement`
+
+let allPElement = document.querySelectorAll("p");
 
 // 17. Select all the buttons and log the count of buttons.
 
+
+
 // 18. Select all the `label` element and log the count.
+
+let totalLabel = document.querySelectorAll("label").length;
+
+console.log(totalLabel);
 
 // 19. Select all the elements with `id` of `test`
 
+document.getElementById("test");
+
 // 20. Select the first element with id `test` using `getElementById`
+
+document.querySelector("#test");
 
 // 21. Select the parent element of the element stored in `topics` variable (#5) and log the element.
 
+let topHead = document.querySelector(".topics");
+
+console.log(topHead.parentElement);
+
 // 22. Select the next element sibling of the element stored in `topics` variable (#5) and log the element.
+
+console.log(topHead.nextElementSibling);
 
 // 23. Select the previous element sibling of the element stored in `topics` variable (#5) and change the `innerText` property to `Learning About Walking the DOM`.
 
+console.log(topHead.previousElementSibling.innerText = "Learning About Walking the DOM");
+
 // 24. Select the first element child of the element stored in `topics` variable (#5) and change the `innerText` property of the element to `This is the first child element`.
+
+console.log(topHead.children[0].innerText = "This is the first child element");
 
 // 25. Select the last element child of the element stored in `topics` variable (#5) and log the `typeof` the element.
 
+let lastLi = topHead.children[5];
+
+console.log(typeof(lastLi));
+
 // 26. Select the element with type `fieldset` and store in a variable named `fieldsetElm`.
 
+
+
 // 27. Select the parent element of the element stored in `fieldsetElm` variable (#5) and log the `typeof` the element.
+
+
