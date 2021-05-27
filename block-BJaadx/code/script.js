@@ -1,31 +1,64 @@
 // 1. Change the title of the page to `Hello AltCampus!`
 
+document.title = "Hello AltCampus!";
+
 // 2. Select the element using the children property:
 
 //    - Select the `h1` element and change the value to `Learning DOM`
 
+let h1 = document.body.children[0];
+
+h1.innerText = "Learning DOM";
+
 //    - Select the first `li` element inside the `ul` with class `topics` and change the innerText to `all about document`
+
+let firstListItem = document.body.children[5].children[0];
+
+firstListItem.innerText = "all about document";
+
 //    - Select the input element with name `email`
+
+document.body.children[6].children[2]; 
 
 // 3. Log the number (using console.log) of children of all the `li` element inside the ul with class `topics`
 
+console.log(document.querySelector("ul").children.length);
+
 // 4. Select the first input using the `type` selector and store them in variable named `emailInput`
+
+let emailInput = document.querySelector("input");
 
 // 5. Select the ul element using class selector and store in `topics`
 
+let topics = document.querySelector(".topics");
+
 // 6. Select the first label element and store in `label`
+
+let label = document.querySelector("label");
 
 // 7. Select the input of type `checkbox` with the `id` selector and store in `inputCheckbox`
 
+let inputCheckbox = document.getElementById("remember");
+
 // 8. Select the input of type password using Attribute selectors. (eg: input[type="text"]) and store in `password`
+
+
 
 // 9. Select the input using the placeholder attribute selector with value `password` and store in `attrPassword`
 
+
+
 // 10. Select all the `li` element and store in `allTopics`
+
+let allTopics = document.querySelectorAll("li");
 
 // 11. Select all the input element of any type and store in `allInput`
 
+let allInput = document.querySelectorAll("input");
+
 // 12. Use forEach to console the `innerText` property of all the li element in `allTopics` variable.
+
+
 
 // 13. Select all the elements with class `list` and store in variable `listOfSelectedTopics`
 
