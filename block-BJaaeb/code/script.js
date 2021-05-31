@@ -5,6 +5,10 @@ default value to be "text" and return the input element inside label. (create it
 
 */
 
+function createInputElm(label,type = "text"){
+  
+}
+
 // Your code goes here
 
 // TEST
